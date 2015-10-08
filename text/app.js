@@ -9,6 +9,13 @@ layers_1_1 = Framer.Importer.load("imported/1.1")
 layers_1_2 = Framer.Importer.load("imported/1.2")
 layers_2_134 = Framer.Importer.load("imported/2.1_2.3_2.4")
 layers_2_2 = Framer.Importer.load("imported/2.2")
+layers_3_13 = Framer.Importer.load("imported/3.1_3.3")
+layers_3_2 = Framer.Importer.load("imported/3.2")
+layers_4_1 = Framer.Importer.load("imported/4.1")
+layers_4_2 = Framer.Importer.load("imported/4.2")
+layers_5_1 = Framer.Importer.load("imported/5.1")
+layers_5_23 = Framer.Importer.load("imported/5.2_5.3")
+layers_6_12 = Framer.Importer.load("imported/6.1_6.2")
 
 /*
 for (layerName in layers_1_1) {
@@ -104,10 +111,12 @@ var StorylineElement = function(params) {
         });
 
         // buttons
+        if (params.buttons !== undefined) {
         this.buttons = new Array();
         for (var i=0; i< params.buttons.length; i++) {
             var newButton = new Button(params.buttons[i]);
             this.buttons.push(newButton);
+        }
         }
     }
 };
@@ -191,7 +200,7 @@ var Button = function(params) {
     console.log(params);
     this.layer = params.layer;
     this.layer.parentObject = this;
-    this.layerHover = params.layerHover;
+    //this.layerHover = params.layerHover;
 
     var popupParams = { header: params.targetHeader, body: params.targetBody};
     this.popup = new Popup(popupParams);
@@ -220,6 +229,7 @@ storylineElements.push(new StorylineElement({
     }],
 }
 ));
+console.log("making layer 2");
 storylineElements.push(new StorylineElement({
     mainLayer: importLayers["atom 2"],
     expandedLayer: layers_2_134["background"],
@@ -231,6 +241,59 @@ storylineElements.push(new StorylineElement({
     }],
 }
 ));
+console.log("making layer 3");
+storylineElements.push(new StorylineElement({
+    mainLayer: importLayers["atom_3"],
+    expandedLayer: layers_3_13["background"],
+    buttons: [{
+        layer: layers_3_13["european_commission_hit"],
+    layerHover: layers_3_13["org_down"],
+    targetHeader: layers_3_2["header"],
+    targetBody: layers_3_2["body"],
+    }],
+}
+));
+console.log("making layer 4");
+storylineElements.push(new StorylineElement({
+    mainLayer: importLayers["atom_4"],
+    expandedLayer: layers_4_1["background"],
+    buttons: [{
+        layer: layers_4_1["org_down"],
+    layerHover: layers_4_1["org_down"],
+    targetHeader: layers_4_2["header"],
+    targetBody: layers_4_2["body"],
+    }],
+}
+));
+console.log("making layer 5");
+storylineElements.push(new StorylineElement({
+    mainLayer: importLayers["atom_5"],
+    expandedLayer: layers_5_1["background"],
+    buttons: [{
+        layer: layers_5_1["PERSON_1_down"],
+    layerHover: layers_5_1["org_down"],
+    targetHeader: layers_5_23["header"],
+    targetBody: layers_5_23["body"],
+    },{
+             layer: layers_5_1["PERSON_2"],
+    layerHover: layers_5_1["org_down"],
+    targetHeader: layers_5_23["header"],
+    targetBody: layers_5_23["body"],   
+    }],
+}
+));
+console.log("making layer 6");
+storylineElements.push(new StorylineElement({
+    mainLayer: importLayers["atom_6"],
+    expandedLayer: layers_6_12["background"],
+}
+));
+console.log("making layer 7");
+storylineElements.push(new StorylineElement({
+    mainLayer: importLayers["atom_7"],
+}
+));
+
 
 // Main Vertical scroller
 var storylineScroller = new ScrollComponent({
