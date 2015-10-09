@@ -1,0 +1,184 @@
+window.__imported__ = window.__imported__ || {};
+window.__imported__["2.2/layers.json.js"] = [
+	{
+		"id": 10487,
+		"name": "2.2",
+		"layerFrame": {
+			"x": 0,
+			"y": 0,
+			"width": 1080,
+			"height": 1840
+		},
+		"maskFrame": null,
+		"image": null,
+		"imageType": null,
+		"children": [
+			{
+				"id": 10486,
+				"name": "header-2",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 1080,
+					"height": 1840
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/header-2.png",
+					"frame": {
+						"x": 28,
+						"y": 30,
+						"width": 1026,
+						"height": 153
+					}
+				},
+				"imageType": "png",
+				"children": [
+					{
+						"id": 10491,
+						"name": "label",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 1080,
+							"height": 1840
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/label.png",
+							"frame": {
+								"x": 106,
+								"y": 67,
+								"width": 273,
+								"height": 70
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "16058172"
+					}
+				],
+				"modification": "322144502"
+			},
+			{
+				"id": 10506,
+				"name": "body",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 1080,
+					"height": 1840
+				},
+				"maskFrame": null,
+				"image": null,
+				"imageType": null,
+				"children": [
+					{
+						"id": 10480,
+						"name": "title copy-2",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 1080,
+							"height": 1840
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/title copy-2.png",
+							"frame": {
+								"x": 101,
+								"y": 1027,
+								"width": 879,
+								"height": 166
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "500131450"
+					},
+					{
+						"id": 10508,
+						"name": "text",
+						"layerFrame": {
+							"x": 0,
+							"y": 0,
+							"width": 1080,
+							"height": 1840
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/text.png",
+							"frame": {
+								"x": 101,
+								"y": 1248,
+								"width": 856,
+								"height": 210
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "515779270"
+					},
+					{
+						"id": 10474,
+						"name": "img-2",
+						"layerFrame": {
+							"x": 30,
+							"y": 30,
+							"width": 1020,
+							"height": 1780
+						},
+						"maskFrame": null,
+						"image": {
+							"path": "images/img-2.png",
+							"frame": {
+								"x": 30,
+								"y": 32,
+								"width": 1020,
+								"height": 1778
+							}
+						},
+						"imageType": "png",
+						"children": [
+							
+						],
+						"modification": "880377741"
+					}
+				],
+				"modification": "1006839344"
+			},
+			{
+				"id": 10504,
+				"name": "background",
+				"layerFrame": {
+					"x": 0,
+					"y": 0,
+					"width": 1080,
+					"height": 1840
+				},
+				"maskFrame": null,
+				"image": {
+					"path": "images/background.png",
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"width": 1080,
+						"height": 1840
+					}
+				},
+				"imageType": "png",
+				"children": [
+					
+				],
+				"modification": "515868645"
+			}
+		],
+		"modification": "1206821110"
+	}
+]
