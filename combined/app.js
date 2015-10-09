@@ -102,8 +102,6 @@ var StorylineElement = function(params,parentObject) {
         this.headerLayer.parentStory = this.params.parentStory;
 
         this.headerLayer.on(Events.TouchEnd, function(event, layer) {
-            console.log("header clicked");
-            console.log(layer.parentStory.scroller.scrolling);
             if (!layer.parentStory.scroller.scrolling) {
                 if (layer.parentObject.isExpanded == false) {
                     layer.parentObject.expand();
@@ -379,9 +377,8 @@ var Story = function(params) {
     });
     // Detect when we're scrolling to prevent the user accidentally clicking on a drawer and opening it
     this.scroller.scrolling  = false;
-    console.log(this.scroller);
-    this.scroller.on(Events.DirectionLockDidStart, function(Event,layer) { console.log(layer); layer.layer.superLayer.scrolling = true});
-    this.scroller.on(Events.ScrollEnd, function(event,layer) { console.log("nop"); layer.layer.superLayer.scrolling = false});
+    this.scroller.on(Events.DirectionLockDidStart, function(Event,layer) { layer.layer.superLayer.scrolling = true});
+    this.scroller.on(Events.ScrollEnd, function(event,layer) { layer.layer.superLayer.scrolling = false});
 
     // Scrollable region that goes inside scroller
     this.storyRegion = new Layer({
