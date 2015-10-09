@@ -36,7 +36,7 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 				"children": [
 					
 				],
-				"modification": "944350326"
+				"modification": "978702573"
 			},
 			{
 				"id": 10525,
@@ -53,7 +53,7 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 				"children": [
 					{
 						"id": 10515,
-						"name": "2",
+						"name": "person_2",
 						"layerFrame": {
 							"x": 30,
 							"y": 1504,
@@ -62,7 +62,7 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 						},
 						"maskFrame": null,
 						"image": {
-							"path": "images/2.png",
+							"path": "images/person_2.png",
 							"frame": {
 								"x": 30,
 								"y": 1653,
@@ -74,7 +74,7 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 						"children": [
 							{
 								"id": 10514,
-								"name": "title copy",
+								"name": "title copy-2",
 								"layerFrame": {
 									"x": 0,
 									"y": 0,
@@ -83,7 +83,7 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 								},
 								"maskFrame": null,
 								"image": {
-									"path": "images/title copy.png",
+									"path": "images/title copy-2.png",
 									"frame": {
 										"x": 100,
 										"y": 2500,
@@ -95,14 +95,14 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 								"children": [
 									
 								],
-								"modification": "834893757"
+								"modification": "1316671084"
 							}
 						],
-						"modification": "2053271697"
+						"modification": "422704919"
 					},
 					{
 						"id": 7611,
-						"name": "1",
+						"name": "person_1",
 						"layerFrame": {
 							"x": 30,
 							"y": 30,
@@ -111,7 +111,7 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 						},
 						"maskFrame": null,
 						"image": {
-							"path": "images/1.png",
+							"path": "images/person_1.png",
 							"frame": {
 								"x": 30,
 								"y": 32,
@@ -144,13 +144,13 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 								"children": [
 									
 								],
-								"modification": "1817710397"
+								"modification": "55489939"
 							}
 						],
-						"modification": "262428444"
+						"modification": "1959917984"
 					}
 				],
-				"modification": "426653024"
+				"modification": "1680460088"
 			},
 			{
 				"id": 10527,
@@ -175,9 +175,9 @@ window.__imported__["5.2_5.3/layers.json.js"] = [
 				"children": [
 					
 				],
-				"modification": "283986906"
+				"modification": "1819103949"
 			}
 		],
-		"modification": "531983814"
+		"modification": "1894210369"
 	}
 ]
